@@ -1,0 +1,40 @@
+
+config interface 'loopback'
+	option ifname 'lo'
+	option proto 'static'
+	option ipaddr '127.0.0.1'
+	option netmask '255.0.0.0'
+
+config globals 'globals'
+	option ula_prefix 'fde9:a4a3:6083::/48'
+
+config interface 'lan'
+	option ifname 'bat0 eth0.1'
+	option type 'bridge'
+	option proto 'dhcp'
+
+config interface 'batmeshnet'
+	option ifname 'mesh0'
+	option proto 'batadv'
+	option mesh 'bat0'
+	option mtu '2304'
+
+config interface 'mb'
+	option ifname 'bat0'
+	option type 'bridge'
+	option 'dhcp'
+
+config device 'lan_dev'
+	option name 'eth0.1'
+	option macaddr 'ac:84:c6:e8:c0:e6'
+
+config switch
+	option name 'switch0'
+	option reset '1'
+	option enable_vlan '1'
+
+config switch_vlan
+	option device 'switch0'
+	option vlan '1'
+	option ports '4 6t'
+
