@@ -1,6 +1,6 @@
 # triangl.io AP Setup
 ## 1. Install Image
-1. Configure PC with static IP 192.168.0.66/24 and tftp server.
+1. Configure PC with static IP 192.168.0.66/24 (Subnetmas: 255.255.255.0) and start tftp server with `tftp 192.168.0.66`
 2. Rename "openwrt-ramips-mt76x8-tplink_tl-wr902ac-v3-squashfs-tftp-recovery.bin"
    to "tp_recovery.bin" and place it in tftp server directory.
 3. Connect PC with the LAN port of the AP, press the reset button, power up
