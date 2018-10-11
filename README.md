@@ -1,4 +1,5 @@
-# 1. Install Image
+# triangl.io AP Setup
+## 1. Install Image
 1. Configure PC with static IP 192.168.0.66/24 and tftp server.
 2. Rename "openwrt-ramips-mt76x8-tplink_tl-wr902ac-v3-squashfs-tftp-recovery.bin"
    to "tp_recovery.bin" and place it in tftp server directory.
@@ -9,11 +10,11 @@
 5. Connect `ssh root@192.168.1.1`, start with configuration
 6. Optional: if message "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!", do a `ssh-keygen -R 192.168.1.1`
 
-# 2. Setup AP
+## 2. Configure AP
 Stores the configurations used to set up the mesh network using the openwrt operation system and the batman mesh algorithm.
 
 
-## Fresh Installation notes
+### Fresh Installation notes
 
 Clone repo locally, then transfer files to AP root directory. 
 
