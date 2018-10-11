@@ -11,7 +11,7 @@
 6. Optional: if message "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!", do a `ssh-keygen -R 192.168.1.1`
 
 ## 2. Configure AP
-Activate DHCP in the network config.
+### Activate DHCP in the network config.
 
 1. Open `/etc/config/network`
 2. Set `option proto 'static'` to ` option proto 'dhcp'` in the `lan` interface
