@@ -6,7 +6,7 @@
 3. Connect PC with the LAN port of the AP, press the reset button, power up
    the router and keep button pressed for around 6-7 seconds, until
    device starts downloading the file.
-4. Router will download file from server, write it to flash and reboot.
+4. Router will download file from server, write it to flash and reboot. The install process take about 1 minute.
 5. Connect `ssh root@192.168.1.1`, start with configuration
 6. Optional: if message "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!", do a `ssh-keygen -R 192.168.1.1`
 
