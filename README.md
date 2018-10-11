@@ -11,6 +11,14 @@
 6. Optional: if message "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!", do a `ssh-keygen -R 192.168.1.1`
 
 ## 2. Configure AP
+Activate DHCP in the network config.
+
+1. Open `/etc/config/network`
+2. Set `option proto 'static'` to ` option proto 'dhcp'` in the `lan` interface
+3. Delete the following lines in the `lan` interface
+4. Set a root password `passwd root`
+5. Restart the AP `reboot` and connect it to the Factory Network (LAN)
+
 Stores the configurations used to set up the mesh network using the openwrt operation system and the batman mesh algorithm.
 
 
