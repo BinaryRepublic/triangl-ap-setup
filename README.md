@@ -2,7 +2,7 @@
 ## 1. Install Image
 1. Configure PC with static IP 192.168.0.66/24 (Subnetmask: 255.255.255.0) and start tftp server with `tftp 192.168.0.66`
 2. Rename "openwrt-ramips-mt76x8-tplink_tl-wr902ac-v3-squashfs-tftp-recovery.bin"
-   to "tp_recovery.bin" and place it in tftp server directory.
+   to "tp_recovery.bin" and place it in tftp server directory `/private/tftpboot` (mac).
 3. Connect PC with the LAN port of the AP, press the reset button, power up
    the router and keep button pressed for around 6-7 seconds, until
    device starts downloading the file.
