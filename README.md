@@ -22,7 +22,10 @@
 
 Stores the configurations used to set up the mesh network using the openwrt operation system and the batman mesh algorithm.
 
-## Change Welcome message
+### Change Welcome message
+1. Connect `shh root@NEWIPADDRESS` with the new ip.
+2. Go to `/etc` and open `banner`
+3. Change to
 ```
 
  ####### ########  ####    ###    ##    ##  ######   ##
@@ -34,7 +37,7 @@ Stores the configurations used to set up the mesh network using the openwrt oper
    ##    ##     ## #### ##     ## ##    ##  ######   ########
 
 -------------------------------------------------------------
-************** GATEWAY NODE AC:84:C6:E8:BE:79 ***************
+************* WIRELESS NODE AC:84:C6:E8:BE:79 ***************
 -------------------------------------------------------------
 
 ```
