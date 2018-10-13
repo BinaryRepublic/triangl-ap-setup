@@ -19,16 +19,31 @@
 4. Set a root password `passwd root`
 5. Restart the AP `reboot` and connect it to the Factory Network (LAN)
 6. Wait until our bot post the new ip address in the #hardware_update slack channel
-7. Connect `shh root@NEWIPADDRESS` to the router.
 
 Stores the configurations used to set up the mesh network using the openwrt operation system and the batman mesh algorithm.
 
+## Change Welcome message
+```
+
+ ####### ########  ####    ###    ##    ##  ######   ##
+   ##    ##     ##  ##    ## ##   ###   ## ##    ##  ##
+   ##    ##     ##  ##   ##   ##  ####  ## ##        ##
+   ##    ########   ##  ##     ## ## ## ## ##   #### ##
+   ##    ##   ##    ##  ######### ##  #### ##    ##  ##
+   ##    ##    ##   ##  ##     ## ##   ### ##    ##  ##
+   ##    ##     ## #### ##     ## ##    ##  ######   ########
+
+-------------------------------------------------------------
+************** GATEWAY NODE AC:84:C6:E8:BE:79 ***************
+-------------------------------------------------------------
+
+```
 
 ### Fresh Installation notes
 
-Clone repo locally, then transfer files to AP root directory. 
-
-Ssh to ap, then execute:
+1. Clone repo locally, then transfer files to AP root directory. 
+2. Connect `shh root@NEWIPADDRESS` to the router.
+3. Execute the following commands:
 
 ```bash
 opkg update
