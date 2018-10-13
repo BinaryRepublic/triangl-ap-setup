@@ -18,6 +18,8 @@
 3. Delete the following lines in the `lan` interface
 4. Set a root password `passwd root`
 5. Restart the AP `reboot` and connect it to the Factory Network (LAN)
+6. Wait until our bot post the new ip address in the #hardware_update slack channel
+7. Connect `shh root@NEWIPADDRESS` to the router.
 
 Stores the configurations used to set up the mesh network using the openwrt operation system and the batman mesh algorithm.
 
