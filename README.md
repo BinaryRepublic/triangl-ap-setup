@@ -1,5 +1,5 @@
 # triangl.io AP Setup
-## 1. Install Image
+### 1. Install Image
 1. Configure PC with static IP 192.168.0.66/24 (Subnetmask: 255.255.255.0) and start tftp server with `tftp 192.168.0.66`
 2. Rename "openwrt-ramips-mt76x8-tplink_tl-wr902ac-v3-squashfs-tftp-recovery.bin"
    to "tp_recovery.bin" and place it in tftp server directory `/private/tftpboot` (mac).
@@ -10,7 +10,7 @@
 5. Connect `ssh root@192.168.1.1`, start with configuration
 6. Optional: if message "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!", do a `ssh-keygen -R 192.168.1.1`
 
-## 2. Install Packages
+### 2. Install Packages
 1. Get kernel Version with `uname -r` (eg. 4.14.67)
 2. Copy package folder based on the kernel version: `scp -r packages/4.14.67 root@192.168.1.1:/tmp/` (change version folder if necessary)
 3. Go to `cd /tmp/4.14.67` 
@@ -22,7 +22,7 @@ opkg install kmod-lib-crc16_4.14.67-1_mipsel_24kc.ipk
 opkg install kmod-batman-adv_4.14.67+2018.2-0_mipsel_24kc.ipk
 ```
 
-## 3. Change welcome message
+### 3. Change welcome message
 1. Go to `/etc` and open `vim banner`
 2. Change to:
 ```
@@ -40,29 +40,20 @@ opkg install kmod-batman-adv_4.14.67+2018.2-0_mipsel_24kc.ipk
 ```
 3. Change mac address
 
-## 4. Configure AP
+### 4. Configure AP
 1. Open `vim /etc/config/network` and copy the ula_prefix (config globals 'globals') to the local network file (folder: wireless_node), copy also the mac address (lan_dev) in the local network file.
 2. Copy all files from wireless_node to `/etc/config`
 3. Set root password `passwd root`
 4. Restart
 
-## 3. Configure AP
+### 3. Configure AP
 
-
-
-1. Open `vim /etc/config/network`
-2. Set `option proto 'static'` to ` option proto 'dhcp'` in the `lan` interface
-3. Delete the following lines in the `lan` interface
-4. Set a root password `passwd root`
-5. Restart the AP `reboot` and connect it to the Factory Network (LAN)
 6. Wait until our bot post the new ip address in the #hardware_update slack channel
 
 ```bash
 opkg update
-opkg install kmod-batman-adv
 opkg install batctl
 opkg remove wpad-mini
 opkg install wpad-mesh
 ```
-Move config files to `/etc/config/`
 
