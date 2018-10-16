@@ -44,11 +44,13 @@ opkg install kmod-batman-adv_4.14.67+2018.2-0_mipsel_24kc.ipk
 1. Open `vim /etc/config/network` and copy the ula_prefix (config globals 'globals') to the local network file (folder: wireless_node), copy also the mac address (lan_dev) in the local network file.
 2. Copy all files from wireless_node to `/etc/config`
 3. Set root password `passwd root`
-4. Restart
+4. Restart `reboot`
 
-### 3. Configure AP
+### 5. Install additional packages
 
-6. Wait until our bot post the new ip address in the #hardware_update slack channel
+1. Wait until our bot post the new ip address in the #hardware_update slack channel.
+2. Connect via ssh to the ap.
+3. Install packages
 
 ```bash
 opkg update
