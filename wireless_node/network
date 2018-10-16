@@ -6,7 +6,7 @@ config interface 'loopback'
 	option netmask '255.0.0.0'
 
 config globals 'globals'
-	option ula_prefix 'fde9:a4a3:6083::/48'
+	option ula_prefix 'fdff:40d5:0eae::/48'
 
 config interface 'lan'
 	option ifname 'bat0 eth0.1'
@@ -26,7 +26,7 @@ config interface 'mb'
 
 config device 'lan_dev'
 	option name 'eth0.1'
-	option macaddr 'ac:84:c6:e8:c0:e6'
+	option macaddr 'ac:84:c6:e8:c0:6e'
 
 config switch
 	option name 'switch0'
