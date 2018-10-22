@@ -15,7 +15,8 @@
 2. Copy package folder based on the kernel version: `scp -r packages/4.14.67 root@192.168.1.1:/tmp/` (change version folder if necessary)
 3. Go to `cd /tmp/4.14.67` 
 4. Install packages:
-```opkg install kmod-crypto-hash_4.14.67-1_mipsel_24kc.ipk
+```
+opkg install kmod-crypto-hash_4.14.67-1_mipsel_24kc.ipk
 opkg install kmod-crypto-crc32c_4.14.67-1_mipsel_24kc.ipk
 opkg install kmod-lib-crc32c_4.14.67-1_mipsel_24kc.ipk
 opkg install kmod-lib-crc16_4.14.67-1_mipsel_24kc.ipk
