@@ -59,5 +59,6 @@ opkg install batctl
 opkg remove wpad-mini
 opkg install wpad-mesh
 opkg install curl
+opkg install jq
 ```
 
