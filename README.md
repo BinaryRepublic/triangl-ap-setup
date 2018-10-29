@@ -11,16 +11,16 @@
 6. Optional: if message "WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!", do a `ssh-keygen -R 192.168.1.1`
 
 ### 2. Install Packages
-1. Get kernel Version with `uname -r` (eg. 4.14.67)
-2. Copy package folder based on the kernel version: `scp -r packages/4.14.67 root@192.168.1.1:/tmp/` (change version folder if necessary)
-3. Go to `cd /tmp/4.14.67` 
+1. Get kernel Version with `uname -r` (eg. 4.14.68)
+2. Copy package folder based on the kernel version: `scp -r packages/4.14.68 root@192.168.1.1:/tmp/` (change version folder if necessary)
+3. Go to `cd /tmp/4.14.68` 
 4. Install packages:
 ```
-opkg install kmod-crypto-hash_4.14.67-1_mipsel_24kc.ipk
-opkg install kmod-crypto-crc32c_4.14.67-1_mipsel_24kc.ipk
-opkg install kmod-lib-crc32c_4.14.67-1_mipsel_24kc.ipk
-opkg install kmod-lib-crc16_4.14.67-1_mipsel_24kc.ipk
-opkg install kmod-batman-adv_4.14.67+2018.2-0_mipsel_24kc.ipk
+opkg install kmod-crypto-hash_4.14.68-1_mipsel_24kc.ipk
+opkg install kmod-crypto-crc32c_4.14.68-1_mipsel_24kc.ipk
+opkg install kmod-lib-crc32c_4.14.68-1_mipsel_24kc.ipk
+opkg install kmod-lib-crc16_4.14.68-1_mipsel_24kc.ipk
+opkg install kmod-batman-adv_4.14.68+2018.2-0_mipsel_24kc.ipk
 ```
 
 ### 3. Change welcome message
