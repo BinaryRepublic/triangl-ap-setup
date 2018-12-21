@@ -1,4 +1,9 @@
 # triangl.io AP Setup
+
+Here is a introduction guide to flash OpenWRT on a TP-Link TL-WR902AC and install the triangl software applications.
+
+Download the TFP Recovery Image from https://openwrt.org/toh/hwdata/tp-link/tp-link_tl-wr902ac_v3
+
 ### 1. Install Image
 1. Configure PC with static IP 192.168.0.66/24 (Subnetmask: 255.255.255.0) and start tftp server with `tftp 192.168.0.66`
 2. Rename "openwrt-ramips-mt76x8-tplink_tl-wr902ac-v3-squashfs-tftp-recovery.bin"
