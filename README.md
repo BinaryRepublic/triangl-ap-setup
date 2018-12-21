@@ -1,4 +1,4 @@
-# triangl.io AP Setup
+# triangl AP Setup
 
 Here is a introduction guide to flash OpenWRT on a TP-Link TL-WR902AC (V3) and install the triangl software applications.
 
