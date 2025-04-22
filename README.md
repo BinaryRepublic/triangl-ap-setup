@@ -6,9 +6,9 @@ This works because smartphones and smartwatches regularly broadcast "probe reque
 When three or more access points detect a signal from the same device, our system calculates its position using signal strength and time-of-flight lateration. The tracking data goes through a processing pipeline that converts it to an easily queryable format and stores it in an analyzing database.
 Businesses can use this tracking data to analyze customer flow patterns, generate heatmaps of high-traffic areas, and accurately count customers throughout their space. Our customers can access all this analyzed data through a dashboard to understand movement patterns and optimize their layouts.
 
-Architectural overview: https://github.com/binaryrepublic/triangl-infrastructure#overview
-Tracking-Ingestion Service: https://github.com/BinaryRepublic/triangl-tracking-ingestion-service
-Processing Pipeline: https://github.com/BinaryRepublic/triangl-processing-pipeline
+**Architectural overview:** https://github.com/binaryrepublic/triangl-infrastructure#overview
+**Tracking-Ingestion Service:** https://github.com/BinaryRepublic/triangl-tracking-ingestion-service
+**Processing Pipeline:** https://github.com/BinaryRepublic/triangl-processing-pipeline
 
 ## triangl AP Setup
 
