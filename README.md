@@ -7,7 +7,9 @@ When three or more access points detect a signal from the same device, our syste
 Businesses can use this tracking data to analyze customer flow patterns, generate heatmaps of high-traffic areas, and accurately count customers throughout their space. Our customers can access all this analyzed data through a dashboard to understand movement patterns and optimize their layouts.
 
 **Architectural overview:** https://github.com/binaryrepublic/triangl-infrastructure#overview
+
 **Tracking-Ingestion Service:** https://github.com/BinaryRepublic/triangl-tracking-ingestion-service
+
 **Processing Pipeline:** https://github.com/BinaryRepublic/triangl-processing-pipeline
 
 ## triangl AP Setup
